@@ -9,11 +9,19 @@ Install:
 Check if cluster is up and running - *kubectl get nodes*
 
 # Run manifests
-
-## Create the persisten volume for Postgres
+### Create the namespace
+```kubectl create -f sonar-namespace.yaml```
+### Create the persistent volume for PostgresDB
 ```kubectl create -f postgres-pvc.yaml```
-## Deploy and config the Postgres DB
+### Deploy and config the PostgresDB
 ```kubectl create -f postgres-app.yaml```
+### Create the persistent volume for SonarQ
+```kubectl create -f sonar-pvc.yaml```
+### Deploy and config the SonarQ
+```kubectl create -f sonar-app.yaml```
+### Create the Ingress rule
+```kubectl create -f sonar-ingress.yaml```
+
 
 
 
