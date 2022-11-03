@@ -10,13 +10,13 @@ Check if cluster is up and running - *kubectl get nodes*
 
 # Run manifests
 
-kubectl create -f <manifest.yaml>
+kubectl create -f "manifest.yaml"
 
 
 # Check pods
 
- kubectl get pod -n <namespace>
+ kubectl get pod -n "namespace"
 
 # Check Sonar service
 
-kubectl get svc -n <namespace>
+kubectl get svc -n "namespace"
