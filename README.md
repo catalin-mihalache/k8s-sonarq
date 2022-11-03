@@ -10,9 +10,9 @@ Check if cluster is up and running - *kubectl get nodes*
 
 # Run manifests
 
-# Create the persisten volume for Postgres
+## Create the persisten volume for Postgres
 ```kubectl create -f postgres-pvc.yaml```
-# Deploy and config the Postgres DB
+## Deploy and config the Postgres DB
 ```kubectl create -f postgres-app.yaml```
 
 
